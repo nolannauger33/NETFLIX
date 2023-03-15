@@ -1,3 +1,9 @@
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
 body {
   background-image: linear-gradient(to bottom, #000000, #230a0f, #6f0d04);
     color: white;
