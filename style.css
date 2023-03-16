@@ -4,6 +4,7 @@ html, body{
 }
 
 
+
 body {
   background-image: linear-gradient(to bottom, #000000, #230a0f, #6f0d04);
     color: white;
@@ -11,6 +12,7 @@ body {
     background-repeat: no-repeat;
     padding-left: 2%;
     padding-right: 2%;
+    font-size: 24px;
   }
   
   header{
@@ -45,7 +47,6 @@ body {
     text-align: center;
     text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
     color: red;
-    /*font: 1.5em Georgia, serif;*/
   }
   
   section {
@@ -62,6 +63,8 @@ body {
     text-decoration: underline;
     font-family: Courier New, monospace;
     text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   
   #image_netflix{
@@ -106,19 +109,13 @@ body {
     cursor: pointer;
     margin: auto 50%;
     width: 150px;
-    /*transform: translate(-50%);*/
     margin-top: 50px;
     margin-bottom: 100px;
     border-radius: 50px;
+    transform: translate(-50%, 10px);
 }
 
-.btn1:hover{
-  transform: scale(1.1);
-}
-  
-  
-  @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
   
  
   .col1{
@@ -126,11 +123,20 @@ body {
     margin-left: 15%;
   }
 
+  .col2{
+    width: 50%;
+    margin-left: 15%;
+   visibility: hidden;
+  }
+
+
   .titleBlack{
     color: #000;
   }
 
+
   /*--------------------menu style ----------------*/
+
   @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
@@ -235,9 +241,9 @@ body {
 }
 /*--------------------fin style menu ---*/
 
+
+
 /* animation titre  /*/
-
-
 
 .anim {
   width: 50px;
@@ -252,6 +258,7 @@ body {
 input:focus {
   outline: none;
 }
+
 
 /*card */
 
@@ -369,5 +376,48 @@ input:focus {
   section{
     flex-direction: column;
   }
+
+  .nav-btn {
+    font-size: 20px;
 }
+
+.col1{
+  display: none;
+}
+
+.col2{
+  width: 50%;
+  visibility: visible;
+}
+
+}
+
+/* gallerie */
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+  
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+  margin-left: 12%;
+}
+
+#catalogue {
+  margin-top: 10px;
+  margin-bottom: 150px;
+}
+
+.cardgrid {
+  width: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  transition: all 0.4s;
+}
+
+.cardgrid:hover {
+ transform: scale(1.1);
+ box-shadow: 0 15px 60px rgba(0, 0, 0, 0.8);
+}
+
 
