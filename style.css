@@ -57,6 +57,14 @@ body {
     margin-bottom: 100px;
 }
 
+#col{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
 
   h2 {
     color: red;
@@ -126,7 +134,7 @@ body {
   .col2{
     width: 50%;
     margin-left: 15%;
-   visibility: hidden;
+    visibility: hidden;
   }
 
 
@@ -419,5 +427,4 @@ input:focus {
  transform: scale(1.1);
  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.8);
 }
-
 
